@@ -1,6 +1,6 @@
 <?php
 
-namespace icyEndymion004;
+namespace IcyEndymion004;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
@@ -35,14 +35,10 @@ class main extends PluginBase{
             }else{ 
                 $menu = InvMenu::create(InvMenu::TYPE_CHEST);
                 $menu->setListener(function(InvMenuTransaction $transaction) : InvMenuTransactionResult{
-	            $player = $transaction->getPlayer();
-	            $action = $transaction->getAction();
-	            $player->removeWindow($action->getInventory());
-	            return $transaction->discard()->then(function(Player $player) : void{
-		        $player->sendForm(new class() implements Form{});
+                $menu->send($player);
 	            });
                 });
-            }
+            
           break;
         }
         return true;
