@@ -34,7 +34,6 @@ class main extends PluginBase{
               $sender->sendMessage("FUCK OFF"); 
             }else{ 
                 $menu = InvMenu::create(InvMenu::TYPE_CHEST);
-                $menu->setListener(function(InvMenuTransaction $transaction) : InvMenuTransactionResult{
                 $menu->send($player);
 	            });
                 });
