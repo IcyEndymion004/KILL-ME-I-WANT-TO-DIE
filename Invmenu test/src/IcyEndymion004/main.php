@@ -29,7 +29,7 @@ class main extends PluginBase{
       }
       public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
         switch($cmd->getName()){
-          case "test":
+          case "killme":
             if(!$sender instanceof Player){ 
               $sender->sendMessage("FUCK OFF"); 
             }else{ 
