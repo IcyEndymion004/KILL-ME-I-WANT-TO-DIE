@@ -3,11 +3,11 @@ main: IcyEndymion004\main
 version: 0.0.1
 api: 3.0.0
 author: IcyEndymion004
-description: An Invmenu test cus muqit is a fucking whore
+description: An Invmenu test cus muqsit is a fucking whore
 commands:
   killme:
-    description: muqit Your a whore
-    aliases: [muqityourawhore]
+    description: muqsit Your a whore
+    aliases: [muqsityourawhore]
     permission: whore.command
 permissions:
   whore.command:
