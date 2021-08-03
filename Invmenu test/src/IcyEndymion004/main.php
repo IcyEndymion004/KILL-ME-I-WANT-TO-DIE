@@ -9,7 +9,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 
 use muqsit\invmenu\InvMenuHandler;
-muqsit\invmenu\InvMenu;
+use muqsit\invmenu\InvMenu;
 
 
 class main extends PluginBase{ 
